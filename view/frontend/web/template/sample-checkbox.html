@@ -1,0 +1,23 @@
+<!--
+/**
+ * This file is part of the Sample_CheckoutCheckbox package.
+ *
+ * @copyright Copyright (c) 2025 Nurs
+ * @author    Nurs
+ * @license   MIT
+ */
+-->
+
+<!-- ko if: isVisible -->
+<div class="admin__field admin__field-option">
+    <input type="checkbox"
+           class="admin__control-checkbox"
+           simple-checked="checked"
+           ko-disabled="disabled"
+           ko-focused="focused"
+           ko-value="value"
+           attr="id: uid, name: inputName"/>
+
+    <label class="admin__field-label" text="description" attr="for: uid"></label>
+</div>
+<!--/ko-->
