@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of the Sample_CheckoutCheckbox package.
+ *
+ * @copyright Copyright (c) 2025 Nurs
+ * @author    Nurs
+ * @license   MIT
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Sample_CheckoutCheckbox" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Checkout"/>
+        </sequence>
+    </module>
+</config>
