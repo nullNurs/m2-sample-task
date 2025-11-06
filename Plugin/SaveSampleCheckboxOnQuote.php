@@ -60,7 +60,13 @@ class SaveSampleCheckboxOnQuote
         }
 
         $quote = $this->quoteRepository->getActive($cartId);
-        $quote->setSampleCheckbox($sampleCheckbox);
+
+        /*
+         * When checking if an object was modified, there is a loose equality operator.
+         * Value changing from null to false is not detected.
+         * The solution is to pass 0 or 1 as a string.
+         */
+        $quote->setSampleCheckbox((string)(int)$sampleCheckbox);
 
         try {
             $this->quoteRepository->save($quote);

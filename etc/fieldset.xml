@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of the Sample_CheckoutCheckbox package.
+ *
+ * @copyright Copyright (c) 2025 Nurs
+ * @author    Nurs
+ * @license   MIT
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:DataObject/etc/fieldset.xsd">
+    <scope id="global">
+        <fieldset id="sales_convert_quote">
+            <field name="sample_checkbox">
+                <aspect name="to_order" />
+            </field>
+        </fieldset>
+    </scope>
+</config>
+

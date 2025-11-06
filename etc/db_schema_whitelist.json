@@ -3,5 +3,10 @@
         "column": {
             "sample_checkbox": true
         }
+    },
+    "sales_order": {
+        "column": {
+            "sample_checkbox": true
+        }
     }
 }

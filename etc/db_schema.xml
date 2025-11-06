@@ -14,4 +14,8 @@
         <column xsi:type="smallint" name="sample_checkbox" unsigned="true" nullable="true" identity="false"
                 comment="Sample Checkout Checkbox"/>
     </table>
+    <table name="sales_order">
+        <column xsi:type="smallint" name="sample_checkbox" unsigned="true" nullable="true" identity="false"
+                comment="Sample Checkout Checkbox"/>
+    </table>
 </schema>
