@@ -18,12 +18,10 @@ define([
             var sampleCheckbox = $('input[name="sample_checkbox"]').val();
 
             if (sampleCheckbox == null) {
-                return payload;
+                return;
             }
 
             payload.addressInformation['extension_attributes']['sampleCheckbox'] = sampleCheckbox;
-
-            return payload;
         });
     };
 });
