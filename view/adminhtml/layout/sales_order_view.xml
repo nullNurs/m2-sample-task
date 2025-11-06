@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of the Sample_CheckoutCheckbox package.
+ *
+ * @copyright Copyright (c) 2025 Nurs
+ * @author    Nurs
+ * @license   MIT
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_info">
+            <block class="Magento\Backend\Block\Template" name="sample_checkbox"
+                   template="Sample_CheckoutCheckbox::samplecheckbox.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Sample\CheckoutCheckbox\ViewModel\Adminhtml\SampleCheckboxViewModel</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

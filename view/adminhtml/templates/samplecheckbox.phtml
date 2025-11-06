@@ -1,0 +1,27 @@
+<?php
+/**
+ * This file is part of the Sample_CheckoutCheckbox package.
+ *
+ * @copyright Copyright (c) 2025 Nurs
+ * @author    Nurs
+ * @license   MIT
+ */
+
+declare(strict_types=1);
+
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Magento\Backend\Block\Template $block */
+$viewModel = $block->getViewModel();
+$sampleCheckbox = $viewModel->getSampleCheckbox();
+?>
+
+<?php if ($sampleCheckbox !== null): ?>
+    <tr>
+        <th><?= $escaper->escapeHtml(__('Sample Checkbox')) ?></th>
+        <?php if ($sampleCheckbox): ?>
+            <td><?= $escaper->escapeHtml('Yes') ?></td>
+        <?php else: ?>
+            <td><?= $escaper->escapeHtml('No') ?></td>
+        <?php endif; ?>
+    </tr>
+<?php endif; ?>
